@@ -1,236 +1,824 @@
-/*CREDIT, DO NOT REMOVE:
-Made by tricks #175516 (main)/#474316 (side)
-Inspired by River #34 and their minty dark mode css!
-You can edit this as you wish, just don't remove the credits and dont charge for it. I made this as an accessibility tool.
+/* 
+    Lioden Dark Glass Blue
+    Code by Blightenid (#339429)
+    Free use background image by Nate Biddle @ https://www.pexels.com/@nxbid0/
+    Feel free to edit as long as it is not redistributed
+    
+    -- TO EXCLUDE DEN AND CLAN PAGES --
+    Pick "URLs matching the regexp" from the dropdown above this window (if you're using Stylish, you must click "Specify" below) and paste the following line into the text field
+    https:\/\/www.lioden.com/(?!(territory[^_map]|clan[^s])).*
+
+    DISCLAIMER:
+    Please keep in mind that the sidebar chatbox cannot be excluded. On den/clan pages this may cause it to default to this style or become a mixture of two CSS stlyesheets.
+    This is due to how the chatbox is implemented and the current limitations of CSS.
+
+    -- OTHERWISE --
+    Pick "URLs on the domain" and type lioden.com
+
+    If you find any bugs, odd behavior, or unstyled elements, please let me know, thank you!
+
 */
-
-/*MAIN BODY*/
-div.container.main {
-    background: #111 !important;
+:root {
+    --blacktransparent: rgba(0, 0, 0, .59);
+    --whitetransparent: rgba(255, 255, 255, .2);
+    --color1: #cbf4f5;
+    --color2: #A5CBCC;
+    --color3: #577b88;
+    --color4: #002431;
+    --color5: #040e11;
+    --accent1: #286882;
+    --accent2: #346173;
+    --logohue: hue-rotate(160deg);
 }
 
-div.row {
-    background: none !important;
-    color: #ffffff7d !important;
+/* Text, bg */
+body {
+    color: var(--color3) !important;
+    background-image: url("https://images.pexels.com/photos/26125142/pexels-photo-26125142/free-photo-of-astrophotography.jpeg") !important;
+    background-color: #000 !important;
+    background-position: bottom !important;
+}
+.text-muted {
+    color: var(--accent2) !important;
 }
 
-.container.topbar {
-    background: #111 !important;
-    color: #ffffff7d !important;
+/* Anchor */
+a:link,
+a:visited,
+a:active,
+a h2,
+a h3 {
+    color: var(--color2) !important;
+    transition: 0.15s !important;
+    &:hover {
+        color: var(--color1) !important;
+        text-shadow: 0 0 10px var(--whitetransparent) !important;
+    }
 }
 
-.col-md-9 {
-    background: #1e1e1e !important;
-}
-
-h1, h2 {
-    color: #54697c !important;
-}
-
+/* Header */
+h1,
+h2,
 h3 {
-    color: #ffffff7d !important;
+    color: var(--color2) !important;
+}
+h1 small {
+    color: var(--color3) !important;
 }
 
-a:link, a:visited {
-    color: #677d90 !important;
-}
-
-a:hover {
-    color: #1882e3d9 !important;
-}
-
-th {
-    color: #ffffff7d !important;
-}
-
-.left {
-    background: #2b353d !important;
-}
-
-#txtChatInput, textarea, input {
-    background: #2c2c2c !important;
-    border: 1px solid #000 !important;
-    color: #ffffff7d !important;
-}
-
-select {
-    background: #2c2c2c !important;
-    color: #ffffff7d !important;
-    border: 2px solid #2c2c2c !important;
-}
-
-input[type="submit"], button.button, #btnToggleSidebarChat, #btnChatSend {
-    background: #374959;
-    color: #ffffff7d !important;
+/* Buttons */
+.select-control,
+button.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background: var(--color3) !important;
+    color: var(--color1) !important;
+    border: 1px solid transparent !important;
     text-shadow: none !important;
-    border: 1px solid #1e1e1e !important;
+    transition: 0.15s !important;
+    &:hover {
+        background: var(--color2) !important;
+        color: #FFF !important;
+        text-shadow: none !important;
+        border: 1px solid #FFF !important;
+    }
+    &:active {
+        background: #000 !important;
+        border: 1px solid transparent !important;
+        color: var(--color3) !important;
+    }
 }
-
-input[type="submit"]:hover, button.button:hover, #btnToggleSidebarChat:hover, #btnChatSend:hover {
-    background: #2b353d !important;
+.select-control.bad,
+button.button.bad,
+input[type="button"].bad,
+input[type="submit"].bad,
+input[type="reset"].bad,
+button.clearSelection {
+    background: #420404 !important;
+    color: #ff9090 !important;
     text-shadow: none !important;
-    color: #ffffff7d !important;
+    border: 1px solid transparent !important;
+    transition: 0.15s !important;
+    &:hover {
+        background: #a81818 !important;
+        color: #FFF !important;
+        text-shadow: none !important;
+        border: 1px solid #FFF !important;
+    }
+    &:active {
+        background: #000 !important;
+        color: #a81818 !important;
+        border: 1px solid transparent !important;
+    }
+}
+input[type="submit"].good {
+    background: #044206 !important;
+    color: #29d52f !important;
+    &:hover {
+        background: #12a217 !important;
+        color: #FFF !important;
+        border-color: #FFF !important;
+    }
+}
+button[type="button"].gold,
+button[type="submit"].gold,
+input[type="submit"].gold {
+    background: #d1902e !important;
+    color: #FFF !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    &:hover {
+        box-shadow: 0 0 10px #d1902e !important;
+    }
+    &:active {
+        color: #d1902e !important;
+        background: #000 !important;
+        box-shadow: none !important;
+    }
 }
 
-/*SIDEBAR*/
-.sidebar {
-    background: #111 !important;
+/* Topbar */
+.topbar {
+    background: var(--blacktransparent) !important;
+    color: var(--color3) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 1px solid var(--accent1) !important;
+    border-top: none !important;
+    box-shadow: 0 0 10px var(--color4) !important;
 }
 
-.panel {
-    background: #1e1e1e !important;
-    border: none !important;
-    box-shadow: 1px 1px 1px #000 !important;
+/* Navbar */
+.navbar {
+    background: transparent !important;
+}
+.navbar-default .navbar-nav > li > a {
+    color: var(--color2) !important;
+    border: 1px solid transparent !important;
+    transition: 0.3s !important;
+    &:hover {
+        color: #FFF !important;
+        background: transparent !important;
+        border-top: 1px solid #FFF !important;
+        box-shadow: 0 40px 40px -40px var(--accent1) inset !important;
+    }
+}
+.navbar-brand img {
+    filter: var(--logohue)
 }
 
+/* Main container */
+.main {
+    background: var(--blacktransparent) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid var(--accent1) !important;
+    box-shadow: 0 0 10px var(--color4) !important;
+}
+.col-md-9 {
+    background: transparent !important;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+}
+.breadcrumb > li + li::before {
+    color: var(--color3) !important;
+}
+.breadcrumb > .active {
+    color: var(--color3) !important;
+}
+
+/* Badges */
+.badge,
+.combo-select-row .badge {
+    background: var(--color3) !important;
+    color: #FFF !important;
+}
+
+/* Alerts */
+.alert {
+    background: #000 !important;
+}
+.alert-info {
+    border: 1px solid #042f42 !important;
+    color: #299fd5 !important;
+}
+.alert-info a {
+    color: #90e0ff !important;
+}
+.alert-warning {
+    border: 1px solid var(--color4) !important;
+    color: var(--color2) !important;
+}
+.alert-danger {
+    border: 1px solid #420404 !important;
+    color: #d52929 !important;
+}
+.alert-danger a {
+    color: #ff9090 !important;
+}
+.alert-success {
+    border: 1px solid #044206 !important;
+    color: #29d52f !important;
+}
+.alert-success a {
+    color: #9bff90 !important;
+}
+
+/* Feature */
+div .feature {
+    background: var(--color4) !important;
+    border: 1px solid var(--color3) !important;
+    color: var(--color2) !important;
+}
+
+/* Item catalogue btn */
+a[href="/item-catalogue.php"] .left {
+    background: #000 !important;
+    color: var(--color2) !important;
+    transition: 0.15s !important;
+    &:hover {
+        color: #FFF !important;
+    }
+}
+
+/* Sidebar */
+.col-md-3 .panel {
+    background: #000 !important;
+    color: var(--color3);
+    border: 1px solid var(--color4) !important;
+    box-shadow: none !important;
+}
+.sidebar h3 {
+    color: var(--color2) !important;
+}
+/* Progress Bars */
 .progress {
-    background-color: #383838 !important;
+    background: var(--color4) !important;
 }
-
+.progress div {
+    color: var(--color1) !important;
+}
 .progress-bar {
-    background: #54697c !important;
+    background: var(--color3) !important;
 }
 
-/*NAVBARS*/
-.navbar.navbar-default {
-    background: #2c2c2c !important;
+/* Chat box */
+html.nolayout body {
+    background: transparent !important;
 }
-
-.navbar li a:hover, .sub_menu_item_selected, .combo-select-row[selected], .combo-select-row:hover {
-    background: #373737 !important;
-    color: #5e8fbc !important;
-    border: none !important;
+.s-chat-sidebar #label_currentChannel {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+    color: var(--color2) !important;
 }
-
-ol.breadcrumb {
-    background: #2c2c2c !important;
+.s-chat-sidebar #fraChatChannelMenu {
+    background: #000 !important;
+    border: 1px solid var(--color1) !important;
+    box-shadow: none !important;
 }
-
-input.floatright {
-    background: #374959 !important;
-    color: #5e8fbc !important;
-    border: none !important;
-    text-shadow: none;
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+    background: var(--color4) !important;
+    color: var(--color1) !important;
 }
-
-input.floatright:hover {
-    background: #54697c !important;
-    color: #89afd1 !important;
+#fra_chatContainer .channelMenu .channelSwitcher {
+    color: var(--color3) !important;
+    &:hover {
+        background: var(--color3) !important;
+        color: #FFF !important;
+    }
 }
-
-/*CHATBOX*/
-.s-chat-error_screen {
-    background: #1e1e1e !important;
-    color: #ffffff7d !important;
+#btnChatSettings,
+#btnLoadNewMessages {
+    filter: sepia(200%) brightness(2) hue-rotate(130deg) !important;
 }
-
-div#chatMessagePinned.s-chat-message__pinned {
-    background: #1b2b39 !important;
-    color: #5e8fbc !important;
-    border-bottom-color: #374959 !important;
-}
-
-button#label_currentChannel {
-    background: #2c2c2c !important;
-    color: #ffffff7d !important;
-    border: 1px solid #383838 !important;
-}
-
-div#fraChatSettingsMenu {
-    background: #373737 !important;
-    border-color: #1a1a1a !important;
-    box-shadow: 1px 1px 2px #111;
-    color: #ffffff7d !important;
-}
-
-#fraChatSettingsMenu::before, #fraChatSettingsMenu::after {
-    border-bottom-color: #373737;
-}
-
-#fra_chatContainer label {
-    color: #ffffff7d !important;
-}
-
-#fraChatChannelMenu {
-    background: #2c2c2c !important;
-    border: 1px solid #000 !important;
-    box-shadow: 1px 1px 2px #000 !important;
-}
-
-.s-chat-message:nth-child(even){
-    background: #242424 !important;
-    color: #ffffff7d !important;
-}
-
-.s-chat-message:nth-child(odd) {
-    background: #2c2c2c !important;
-    color: #ffffff7d !important;
-}
-
-.s-chat-message_mention:nth-child(even), .s-chat-message_mention:nth-child(odd) {
-    background: #223648 !important;
-    color: #ffffff7d !important;
-}
-
-.s-chat_username {
-    color: #54697c !important;
-}
-
 #chatMessageContainer {
-    border: 1px solid #111;
+    border: 1px solid var(--color4) !important;
+}
+#chatMessagePinned.s-chat-message__pinned {
+    background: var(--color5) url(//static.lioden.com/images/layout/sticky.png) no-repeat 10px 6px !important;
+    border-bottom-color: var(--color3) !important;
+    color: var(--color3) !important;
+}
+#chatMessagePinned {
+    background: var(--color5) !important;
+    border-bottom-color: var(--color3) !important;
+    color: var(--color3) !important;
+}
+.s-chat-message:nth-child(2n + 1) {
+    background: #000;
+}
+.s-chat-message:nth-child(2n) {
+    background: var(--color5);
+}
+#fra_chatContainer .modMessage,
+.s-chat-message__mod {
+    background-color: #002001 !important;
+    color: #9bff90 !important;
+    border-top-color: #9bff90 !important;
+    border-bottom-color: #9bff90 !important;
+}
+.s-chat-sidebar .s-chat-message__mod .s-chat-message_timestamp {
+    color: #074400 !important;
+}
+.s-chat-sidebar .s-chat-message_timestamp {
+    color: var(--color4) !important;
+}
+.s-chat-message_menu {
+    filter: sepia(200%) brightness(1) hue-rotate(130deg) saturate(200%) !important;
+}
+#fra_chatContainer #txtChatInput {
+    border: 1px solid var(--color4) !important;
 }
 
-.s-chat-message.hasContext {
-    border-left-color: #54697c !important;
+/* Footer */
+.white {
+    color: var(--color3) !important;
+}
+.bottomlinks li a {
+    color: var(--color2) !important;
+    border: none !important;
 }
 
-/*DEN & MISC*/
-hr { 
-    border: 0;
-    background-color: #374959;
-    height: 1px;
+/* Dropdowns */
+select,
+.form-control {
+    background: #000 !important;
+    color: var(--color2) !important;
+    border: 1px solid var(--color4) !important;
 }
 
-td.top.center, td.bottom, td.top, th {
-    background: #2b353d !important;
-    color: #ffffff7d !important;
+/* Text inputs */
+input[type="text"],
+textarea,
+pagination input[type="text"],
+input[type="number"],
+input[type="password"] {
+    background: #000 !important;
+    color: var(--color2) !important;
+    border: 1px solid var(--color4) !important;
+}
+.form-control::placeholder {
+    color: var(--color3) !important;
 }
 
-.table, .dib.mr-4, .dib, .right.auto {
-    background: none !important;
+/* Tables */
+.table {
+    border: 1px solid var(--color4) !important;
+    border-collapse: separate !important;
+}
+.table .top,
+.table th {
+    background: var(--color4) !important;
+    color: var(--color1) !important;
+}
+.table .top a:link,
+.table .top a:active,
+.table .top a:visited,
+.table th a:link,
+.table th a:active,
+.table th a:visited {
+    color: var(--color1) !important;
+    border: none !important;
+    &:hover {
+        background: var(--color3) !important;
+    }
+}
+.table .left {
+    background: var(--accent2) !important;
+    color: var(--color1) !important;
+}
+.table .left a {
+    background: transparent !important;
+}
+.table .right {
+    background: #000 !important;
+}
+.table .right_odd {
+    background: var(--color5) !important;
+}
+.table .right_locked {
+    background: var(--color4) !important;
+}
+.table .bottom {
+    background: var(--color4) !important;
+}
+.table .bottom a:link,
+.table .bottom a:visited,
+.table .bottom a:active {
+    color: var(--color2) !important;
+    text-decoration: none !important;
+    &:hover {
+        color: var(--color1) !important;
+    }
+}
+.table .innerHeader,
+.table .sub-header {
+    background: var(--color4) !important;
+}
+.inner-table .right {
+    background: #000 !important;
 }
 
-/*BUTTONS*/
-input[type="button"], button.col-xs-12, #btnLevelUp, .btn-block, button.button {
-    background: #374959;
-    color: #ffffff7d !important;
-    text-shadow: none !important;
-    border: 1px solid #1e1e1e !important;
+/* Pagination */
+.pagination span {
+    background: var(--color5) !important;
+    color: var(--color2) !important;
 }
 
-input[type="button"]:hover, button.col-xs-12:hover, .btn-block:hover, .button.button:hover {
-    background: #2b353d !important;
-    color: #ffffff7d !important;
+/* Action bar */
+.actionBar {
+    background: #000 !important;
+}
+input[name="feedlion"],
+input[name="playlion"] {
+    margin-left: 5px !important;
+    &:hover {
+        margin-left: 5px !important;
+    }
 }
 
-input.shop-button {
-    background: #263a27 !important;
-    color: #7aff838a !important;
+/* Den */
+.cave-grid {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
 }
 
-/*ACHIEVEMENTS & WARDROBE*/
+/* Comment box */
+.comment:nth-child(2n) {
+    background: #000 !important;
+}
+
+/* Pride overview */
+.right_cub {
+    background: var(--color4) !important;
+}
+
+/* Lion page bars */
+div[style*="background: #5CB85C"] {
+    background: var(--color2) !important;
+}
+div[style*="background: #ECAB42"] {
+    background: #e4c89c !important;
+}
+.right[style*="background: none;"] {
+    background: transparent !important;
+}
+
+/* Lion page footer */
+div .left {
+    background: #000 !important;
+}
+
+/* Beetle */
+.mound-grid {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+}
+.sub_menu_item_selected {
+    background: var(--color4) !important;
+}
+
+/* Beetle mound */
+.sub_menu {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+}
+.sub_sub_menu {
+    background: var(--color4) !important;
+}
+
+/* Beetle book */
+.btn-default {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+    color: var(--color3) !important;
+    &:hover {
+        background: #000 !important;
+        border: 1px solid var(--color4) !important;
+        color: var(--color3) !important;
+    }
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+    color: var(--color3) !important;
+}
+.dropdown-menu {
+    background: #000 !important;
+}
+.dropdown-menu > li > a {
+    color: var(--color3) !important;
+    &:hover {
+        background: var(--color3) !important;
+        color: var(--color2) !important;
+    }
+}
+.dropdown-menu .divider {
+    background: var(--color3) !important;
+}
+.group_selector_item {
+    background: var(--color4) !important;
+}
+.group_selector_item.active {
+    background: var(--color5) !important;
+}
+.feature-footer {
+    background: var(--color3) !important;
+    color: var(--color2) !important;
+}
+.beetleBlock {
+    background: #000 !important;
+    transition: 0.3s !important;
+    &:hover {
+        box-shadow: 0 0 40px var(--accent1) !important;
+        border-color: var(--color1) !important;
+    }
+}
+
+/* Achievements */
 .achievement-header {
-    background: #1b2b39 !important;
-    color: #ffffff7d !important;
-    border: 1px solid #000 !important;
+    background: var(--color4) !important;
+    border: 1px solid var(--color4) !important;
+    color: var(--color2) !important;
 }
-
 .achievement-body {
-    background: #2b353d !important;
-    color: #ffffff7d !important;
-    border: 1px solid #000 !important;
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
 }
 
+/* Attack history */
+.attack-won {
+    background: #001101 !important;
+    color: #29d52f !important;
+}
+.attack-won a {
+    color: #96ff90 !important;
+}
+.attack-lost {
+    background: #0f0000 !important;
+    color: #d52929 !important;
+}
+.attack-lost a {
+    color: #ff9090 !important;
+}
+
+/* Premade tags */
+hr {
+    border-top: 1px solid var(--color3) !important;
+}
+.nav-pills > li > a,
+.nav-pills > li > a:focus {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+    color: var(--color2) !important;
+    &:hover {
+        background: #000 !important;
+        color: #FFF !important;
+        border: 1px solid #FFF !important;
+        box-shadow: 0 40px 40px -40px var(--accent1) inset !important;
+    }
+}
+.tags img {
+    border: 4px solid #000 !important;
+    transition: 0.3s !important;
+    &:hover {
+        border: 4px solid #FFF !important;
+        box-shadow: 0 0 20px var(--accent1) !important;
+    }
+}
+
+/* Combo selection */
+.combo-selection-container {
+    background: #000 !important;
+}
+.search_field.form-control,
+.combo-selection-parent {
+    border: 1px solid var(--color4) !important;
+}
+.combo-select-row:hover {
+    background: var(--color3) !important;
+    color: var(--color1) !important;
+}
+.combo-selection-container .block-group {
+    background: var(--color4) !important;
+    color: var(--color3) !important;
+}
+.combo-select-group {
+    box-shadow: none !important;
+}
+.cbo-list {
+    background: #000 !important;
+}
+.cbo-list .optgroup-label {
+    background: var(--color4) !important;
+}
+
+/* Inbox */
+.unread-msg {
+    background: var(--color4) !important;
+}
+
+/* Journal */
+.cke_chrome {
+    border: 1px solid var(--color4) !important;
+}
+.cke_top {
+    background: var(--color5) !important;
+    border-bottom: 1px solid var(--color4) !important;
+    box-shadow: none !important;
+}
+.cke_editable {
+    background: #000 !important;
+}
+.cke_bottom {
+    background: var(--color5) !important;
+    border-top: 1px solid var(--color4) !important;
+    box-shadow: none !important;
+}
+.cke_toolgroup {
+    background: var(--color2) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+a.cke_combo_button {
+    background: var(--color2) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+a.cke_path_item,
+span.cke_path_empty {
+    color: var(--color2) !important;
+    text-shadow: none !important;
+}
+a.cke_path_item:hover,
+a.cke_path_item:focus,
+a.cke_path_item:active {
+    background: var(--color3) !important;
+    box-shadow: none !important;
+}
+
+/* Modbox */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    background: #000 !important;
+    color: var(--color2) !important;
+    &:hover {
+        color: #FFF !important;
+    }
+}
+
+/* Patrolling  */
+#mapcontain table {
+    border: none !important;
+}
+#mapcontain table td[style="background: #A85D41;"] {
+    background: transparent !important;
+}
+
+/* Branch search */
+.input-group-addon {
+    background: var(--color5) !important;
+    color: var(--color3) !important;
+    border: 1px solid var(--color4) !important;
+}
+
+/* Item cards */
+.item {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+}
+.item-header,
+.item-header a {
+    background: var(--color4) !important;
+    color: var(--color2) !important;
+}
+.item a img {
+    border: 2px solid transparent !important;
+    transition: 0.3s !important;
+    &:hover {
+        background: #FFF !important;
+        box-shadow: 0 0 40px var(--accent1) !important;
+        border: 2px solid var(--color1) !important;
+    }
+}
+.item-footer {
+    background: var(--color4) !important;
+    color: var(--color2) !important;
+}
+
+/* Monkey */
+.page-description {
+    border: 1px solid var(--color4) !important;
+}
+
+/* Oasis */
+.item-surround {
+    background: transparent !important;
+}
+
+/* Giving tree */
+.abandoned-count {
+    background: #000 !important;
+    box-shadow: none !important;
+}
+
+/* Raffle lioness */
+.left[style*="border-left: 1px solid #5D241B;"],
+.right[style*="border-left: 1px solid #5D241B;"] {
+    border-left: 1px solid var(--color4) !important;
+}
+
+/* Craft list */
+#recipelist li {
+    background: #000 !important;
+}
+#recipelist li b {
+    color: var(--color2) !important;
+}
+
+/* Wardrobe */
+.customiser-bar {
+    background: #000 !important;
+}
+.button-icon i.btn-settings,
+.button-icon i.btn-download {
+    filter: brightness(3) saturate(0) !important;
+}
+.customiser-bottom {
+    background: var(--color5) !important;
+}
+.customiser-row:nth-child(2n + 1) .slot-label,
+.customiser-sortable li:nth-child(2n + 1) span.left {
+    background: var(--color5) !important;
+}
+.customiser-row:nth-child(2n) .slot-label {
+    background: var(--color4) !important;
+}
+.customiser-row:nth-child(2n + 1),
+.customiser-sortable li:nth-child(2n + 1) {
+    background: #000 !important;
+}
+.customiser-block-grid:nth-child(2n + 1) {
+    background: #000 !important;
+}
 .wardrobe-label[data-type="design"] {
-    background: #383838 !important;
+    background: var(--color3) !important;
+    color: #FFF !important;
+}
+
+/* Create trade */
+.bg-info-100 {
+    background: transparent !important;
+}
+
+/* Manage trades */
+.nav-tabs {
+    border-bottom: 1px solid var(--color4) !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background: var(--color4) !important;
+    border: 1px solid var(--color4) !important;
+}
+.nav-tabs > li > a:hover {
+    background: #000 !important;
+    border: 1px solid var(--color4) !important;
+}
+
+/* Home */
+.randommember {
+    background: #000 !important;
+}
+#lion_image {
+    border: none !important;
+}
+
+/* Wishlist button padding fix */
+.btnAddWishlist {
+    padding: 3px !important;
+}
+
+/* Age chart fix */
+.stage {
+    border: 1px solid var(--color1) !important;
+}
+.ageProgress {
+    background: #2f6f4b !important;
+}
+.stage.newborn {
+    border-left: 1px solid var(--color1) !important;
+    border-radius: 10px 0 0 10px !important;
+    overflow: hidden !important;
+}
+.stage.elder {
+    border-right: 1px solid var(--color1) !important;
+    border-radius: 0 10px 10px 0 !important;
+    overflow: hidden !important;
 }
