@@ -1,7 +1,7 @@
 /* 
-    Lioden Dark Glass Green
+    Lioden Dark Glass Orange
     Code by Blightenid (#339429)
-    Free use background image by Tsvetoslav Hristov @ https://www.pexels.com/@tsvetoslav-hristov-1306654/
+    Free use background image by Luca Dross @ https://www.pexels.com/@lucadross/
     Feel free to edit as long as it is not redistributed
     
     -- TO EXCLUDE DEN AND CLAN PAGES --
@@ -20,22 +20,22 @@
 :root {
     --blacktransparent: rgba(0, 0, 0, .59);
     --whitetransparent: rgba(255, 255, 255, .2);
-    --color1: #e0f5cb;
-    --color2: #becca5;
-    --color3: #778066;
-    --color4: #273118;
-    --color5: #0d1104;
-    --accent1: #5e6944;
-    --accent2: #58623d;
-    --logohue: hue-rotate(50deg);
+    --color1: #ffcbb9;
+    --color2: #caa184;
+    --color3: #865d4b;
+    --color4: #361d0e;
+    --color5: #110804;
+    --accent1: #824628;
+    --accent2: #734934;
+    --logohue: hue-rotate(0deg);
 }
 
 /* Text, bg */
 body {
     color: var(--color3) !important;
-    background-image: url("https://images.pexels.com/photos/2499862/pexels-photo-2499862.jpeg") !important;
+    background-image: url("https://images.pexels.com/photos/4129849/pexels-photo-4129849.jpeg") !important;
     background-color: #000 !important;
-    background-position: bottom !important;
+    background-position: center !important;
 }
 .text-muted {
     color: var(--accent2) !important;
@@ -291,7 +291,7 @@ html.nolayout body {
 }
 #btnChatSettings,
 #btnLoadNewMessages {
-    filter: sepia(200%) brightness(2) hue-rotate(40deg) !important;
+    filter: sepia(200%) brightness(2) !important;
 }
 #chatMessageContainer {
     border: 1px solid var(--color4) !important;
@@ -326,7 +326,7 @@ html.nolayout body {
     color: var(--color4) !important;
 }
 .s-chat-message_menu {
-    filter: sepia(200%) brightness(1) hue-rotate(40deg) saturate(200%) !important;
+    filter: sepia(200%) brightness(1) saturate(200%) !important;
 }
 #fra_chatContainer #txtChatInput {
     border: 1px solid var(--color4) !important;
