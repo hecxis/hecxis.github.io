@@ -1,20 +1,11 @@
-/* 
-CREDIT, DO NOT REMOVE:
+/*CREDIT, DO NOT REMOVE:
 Made by tricks #175516 (main)/#474316 (side)
 Inspired by River #34 and their minty dark mode css!
-Edited + cleaned for Den use.
-You may edit as you wish, do not remove credits or charge for it.
+You can edit this as you wish, just don't remove the credits and dont charge for it. I made this as an accessibility tool.
 */
 
-/* ========= MAIN BODY ========= */
-
-div.container.main,
-.container.topbar,
-.sidebar,
-.actionBar,
-.sub_sub_menu,
-.bottom,
-p.center.b {
+/*MAIN BODY*/
+div.container.main {
     background: #111 !important;
 }
 
@@ -23,133 +14,223 @@ div.row {
     color: #ffffff7d !important;
 }
 
-.col-md-9,
-.panel,
-.item,
-.item-header,
-.item-footer {
+.container.topbar {
+    background: #111 !important;
+    color: #ffffff7d !important;
+}
+
+.col-md-9 {
     background: #1e1e1e !important;
 }
 
-h1, h2 { color: #7c5454 !important; }
-h3, th, tr { color: #ffffff7d !important; }
-
-a:link, a:visited { color: #906767 !important; }
-a:hover { color: #e31818d9 !important; }
-
-/* ========= INPUTS ========= */
-
-input, textarea, select {
-    background: #2c2c2c !important;
-    color: #ffffff7d !important;
-    border: 1px solid #000 !important;
+h1, h2 {
+    color: #54697c !important;
 }
 
-input[type="submit"],
-input[type="button"],
-button.button,
-.btn-block {
-    background: #593737 !important;
+h3 {
     color: #ffffff7d !important;
-    border: 1px solid #1e1e1e !important;
+}
+
+a:link, a:visited {
+    color: #677d90 !important;
+}
+
+a:hover {
+    color: #1882e3d9 !important;
+}
+
+th {
+    color: #ffffff7d !important;
+}
+
+.left {
+    background: #2b353d !important;
+}
+
+#txtChatInput, textarea, input {
+    background: #2c2c2c !important;
+    border: 1px solid #000 !important;
+    color: #ffffff7d !important;
+}
+
+select {
+    background: #2c2c2c !important;
+    color: #ffffff7d !important;
+    border: 2px solid #2c2c2c !important;
+}
+
+input[type="submit"], button.button, #btnToggleSidebarChat, #btnChatSend {
+    background: #374959;
+    color: #ffffff7d !important;
     text-shadow: none !important;
+    border: 1px solid #1e1e1e !important;
 }
 
-input[type="submit"]:hover,
-input[type="button"]:hover,
-button.button:hover,
-.btn-block:hover {
-    background: #3d2b2b !important;
-}
-
-/* ========= NAV ========= */
-
-.navbar.navbar-default,
-ol.breadcrumb,
-.nav-pills > li > a {
-    background: #2c2c2c !important;
-}
-
-.navbar li a:hover,
-.nav-pills > li.active > a {
-    background: #3d2b2b !important;
-    color: #bc5e5e !important;
-}
-
-/* ========= SIDEBAR PANELS ========= */
-
-.left,
-.inner-table .left,
-td.top,
-td.bottom,
-td.top.center {
-    background: #3d2b2b !important;
-}
-
-.inner-table .right,
-td.right_odd,
-tr.right_odd {
-    background: #111 !important;
-}
-
-/* ========= CHAT ========= */
-
-.s-chat-message:nth-child(even) { background: #242424 !important; }
-.s-chat-message:nth-child(odd) { background: #2c2c2c !important; }
-.s-chat-message_mention { background: #572a2a !important; }
-
-.s-chat_username,
-.channelSwitcher {
-    color: #7c5454 !important;
-}
-
-.channelSwitcher.active {
-    background: #7c5454 !important;
-    color: #111 !important;
-}
-
-/* ========= PROGRESS BARS ========= */
-
-.progress { background-color: #383838 !important; }
-.progress-bar,
-div.ageProgress { background: #7c5454 !important; }
-
-/* ========= BADGES ========= */
-
-.badge,
-.abandoned-count {
-    background: #593737 !important;
+input[type="submit"]:hover, button.button:hover, #btnToggleSidebarChat:hover, #btnChatSend:hover {
+    background: #2b353d !important;
+    text-shadow: none !important;
     color: #ffffff7d !important;
 }
 
-/* ========= ALERTS ========= */
-
-.alert-success,
-.alert-danger,
-.alert-info {
+/*SIDEBAR*/
+.sidebar {
     background: #111 !important;
 }
 
-.alert.alert-warning {
-    background-color: #593737 !important;
-    border-color: #593737 !important;
+.panel {
+    background: #1e1e1e !important;
+    border: none !important;
+    box-shadow: 1px 1px 1px #000 !important;
 }
 
-/* ========= MISC ========= */
+.progress {
+    background-color: #383838 !important;
+}
 
-hr {
-    background-color: #593737;
-    height: 1px;
+.progress-bar {
+    background: #54697c !important;
+}
+
+/*NAVBARS*/
+.navbar.navbar-default {
+    background: #2c2c2c !important;
+}
+
+.navbar li a:hover, .sub_menu_item_selected, .combo-select-row[selected], .combo-select-row:hover {
+    background: #373737 !important;
+    color: #5e8fbc !important;
+    border: none !important;
+}
+
+ol.breadcrumb {
+    background: #2c2c2c !important;
+}
+
+input.floatright {
+    background: #374959 !important;
+    color: #5e8fbc !important;
+    border: none !important;
+    text-shadow: none;
+}
+
+input.floatright:hover {
+    background: #54697c !important;
+    color: #89afd1 !important;
+}
+
+/*CHATBOX*/
+.s-chat-error_screen {
+    background: #1e1e1e !important;
+    color: #ffffff7d !important;
+}
+
+div#chatMessagePinned.s-chat-message__pinned {
+    background: #1b2b39 !important;
+    color: #5e8fbc !important;
+    border-bottom-color: #374959 !important;
+}
+
+button#label_currentChannel {
+    background: #2c2c2c !important;
+    color: #ffffff7d !important;
+    border: 1px solid #383838 !important;
+}
+
+div#fraChatSettingsMenu {
+    background: #373737 !important;
+    border-color: #1a1a1a !important;
+    box-shadow: 1px 1px 2px #111;
+    color: #ffffff7d !important;
+}
+
+#fraChatSettingsMenu::before, #fraChatSettingsMenu::after {
+    border-bottom-color: #373737;
+}
+
+#fra_chatContainer label {
+    color: #ffffff7d !important;
+}
+
+#fraChatChannelMenu {
+    background: #2c2c2c !important;
+    border: 1px solid #000 !important;
+    box-shadow: 1px 1px 2px #000 !important;
+}
+
+.s-chat-message:nth-child(even){
+    background: #242424 !important;
+    color: #ffffff7d !important;
+}
+
+.s-chat-message:nth-child(odd) {
+    background: #2c2c2c !important;
+    color: #ffffff7d !important;
+}
+
+.s-chat-message_mention:nth-child(even), .s-chat-message_mention:nth-child(odd) {
+    background: #223648 !important;
+    color: #ffffff7d !important;
+}
+
+.s-chat_username {
+    color: #54697c !important;
+}
+
+#chatMessageContainer {
+    border: 1px solid #111;
+}
+
+.s-chat-message.hasContext {
+    border-left-color: #54697c !important;
+}
+
+/*DEN & MISC*/
+hr { 
     border: 0;
+    background-color: #374959;
+    height: 1px;
 }
 
-kbd {
-    background: #3d2b2b !important;
+td.top.center, td.bottom, td.top, th {
+    background: #2b353d !important;
+    color: #ffffff7d !important;
+}
+
+.table, .dib.mr-4, .dib, .right.auto {
+    background: none !important;
+}
+
+/*BUTTONS*/
+input[type="button"], button.col-xs-12, #btnLevelUp, .btn-block, button.button {
+    background: #374959;
+    color: #ffffff7d !important;
+    text-shadow: none !important;
+    border: 1px solid #1e1e1e !important;
+}
+
+input[type="button"]:hover, button.col-xs-12:hover, .btn-block:hover, .button.button:hover {
+    background: #2b353d !important;
+    color: #ffffff7d !important;
+}
+
+input.shop-button {
+    background: #263a27 !important;
+    color: #7aff838a !important;
+}
+
+/*ACHIEVEMENTS & WARDROBE*/
+.achievement-header {
+    background: #1b2b39 !important;
+    color: #ffffff7d !important;
     border: 1px solid #000 !important;
 }
 
-.winner { border-left: 5px solid #005414 !important; }
-.loser { border-left: 5px solid #7d2b2b !important; }
+.achievement-body {
+    background: #2b353d !important;
+    color: #ffffff7d !important;
+    border: 1px solid #000 !important;
+}
 
-.pagination a.selected { background: #391b1b !important; }
-.pagination a:hover { background: #3d2b2b !important; }
+.wardrobe-label[data-type="design"] {
+    background: #383838 !important;
+}
