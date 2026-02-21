@@ -1,7 +1,7 @@
 /* 
-    Lioden Dark Glass Blue
+    Lioden Dark Glass Green
     Code by Blightenid (#339429)
-    Free use background image by Nate Biddle @ https://www.pexels.com/@nxbid0/
+    Free use background image by Tsvetoslav Hristov @ https://www.pexels.com/@tsvetoslav-hristov-1306654/
     Feel free to edit as long as it is not redistributed
     
     -- TO EXCLUDE DEN AND CLAN PAGES --
@@ -16,25 +16,24 @@
     Pick "URLs on the domain" and type lioden.com
 
     If you find any bugs, odd behavior, or unstyled elements, please let me know, thank you!
-
 */
 :root {
     --blacktransparent: rgba(0, 0, 0, .59);
     --whitetransparent: rgba(255, 255, 255, .2);
-    --color1: #cbf4f5;
-    --color2: #A5CBCC;
-    --color3: #577b88;
-    --color4: #002431;
-    --color5: #040e11;
-    --accent1: #286882;
-    --accent2: #346173;
-    --logohue: hue-rotate(160deg);
+    --color1: #e0f5cb;
+    --color2: #becca5;
+    --color3: #778066;
+    --color4: #273118;
+    --color5: #0d1104;
+    --accent1: #5e6944;
+    --accent2: #58623d;
+    --logohue: hue-rotate(50deg);
 }
 
 /* Text, bg */
 body {
     color: var(--color3) !important;
-    background-image: url("https://images.pexels.com/photos/26125142/pexels-photo-26125142/free-photo-of-astrophotography.jpeg") !important;
+    background-image: url("https://images.pexels.com/photos/2499862/pexels-photo-2499862.jpeg") !important;
     background-color: #000 !important;
     background-position: bottom !important;
 }
@@ -292,7 +291,7 @@ html.nolayout body {
 }
 #btnChatSettings,
 #btnLoadNewMessages {
-    filter: sepia(200%) brightness(2) hue-rotate(130deg) !important;
+    filter: sepia(200%) brightness(2) hue-rotate(40deg) !important;
 }
 #chatMessageContainer {
     border: 1px solid var(--color4) !important;
@@ -327,7 +326,7 @@ html.nolayout body {
     color: var(--color4) !important;
 }
 .s-chat-message_menu {
-    filter: sepia(200%) brightness(1) hue-rotate(130deg) saturate(200%) !important;
+    filter: sepia(200%) brightness(1) hue-rotate(40deg) saturate(200%) !important;
 }
 #fra_chatContainer #txtChatInput {
     border: 1px solid var(--color4) !important;
