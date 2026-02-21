@@ -1,0 +1,155 @@
+/* 
+CREDIT, DO NOT REMOVE:
+Made by tricks #175516 (main)/#474316 (side)
+Inspired by River #34 and their minty dark mode css!
+Edited + cleaned for Den use.
+You may edit as you wish, do not remove credits or charge for it.
+*/
+
+/* ========= MAIN BODY ========= */
+
+div.container.main,
+.container.topbar,
+.sidebar,
+.actionBar,
+.sub_sub_menu,
+.bottom,
+p.center.b {
+    background: #111 !important;
+}
+
+div.row {
+    background: none !important;
+    color: #ffffff7d !important;
+}
+
+.col-md-9,
+.panel,
+.item,
+.item-header,
+.item-footer {
+    background: #1e1e1e !important;
+}
+
+h1, h2 { color: #7c5454 !important; }
+h3, th, tr { color: #ffffff7d !important; }
+
+a:link, a:visited { color: #906767 !important; }
+a:hover { color: #e31818d9 !important; }
+
+/* ========= INPUTS ========= */
+
+input, textarea, select {
+    background: #2c2c2c !important;
+    color: #ffffff7d !important;
+    border: 1px solid #000 !important;
+}
+
+input[type="submit"],
+input[type="button"],
+button.button,
+.btn-block {
+    background: #593737 !important;
+    color: #ffffff7d !important;
+    border: 1px solid #1e1e1e !important;
+    text-shadow: none !important;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button.button:hover,
+.btn-block:hover {
+    background: #3d2b2b !important;
+}
+
+/* ========= NAV ========= */
+
+.navbar.navbar-default,
+ol.breadcrumb,
+.nav-pills > li > a {
+    background: #2c2c2c !important;
+}
+
+.navbar li a:hover,
+.nav-pills > li.active > a {
+    background: #3d2b2b !important;
+    color: #bc5e5e !important;
+}
+
+/* ========= SIDEBAR PANELS ========= */
+
+.left,
+.inner-table .left,
+td.top,
+td.bottom,
+td.top.center {
+    background: #3d2b2b !important;
+}
+
+.inner-table .right,
+td.right_odd,
+tr.right_odd {
+    background: #111 !important;
+}
+
+/* ========= CHAT ========= */
+
+.s-chat-message:nth-child(even) { background: #242424 !important; }
+.s-chat-message:nth-child(odd) { background: #2c2c2c !important; }
+.s-chat-message_mention { background: #572a2a !important; }
+
+.s-chat_username,
+.channelSwitcher {
+    color: #7c5454 !important;
+}
+
+.channelSwitcher.active {
+    background: #7c5454 !important;
+    color: #111 !important;
+}
+
+/* ========= PROGRESS BARS ========= */
+
+.progress { background-color: #383838 !important; }
+.progress-bar,
+div.ageProgress { background: #7c5454 !important; }
+
+/* ========= BADGES ========= */
+
+.badge,
+.abandoned-count {
+    background: #593737 !important;
+    color: #ffffff7d !important;
+}
+
+/* ========= ALERTS ========= */
+
+.alert-success,
+.alert-danger,
+.alert-info {
+    background: #111 !important;
+}
+
+.alert.alert-warning {
+    background-color: #593737 !important;
+    border-color: #593737 !important;
+}
+
+/* ========= MISC ========= */
+
+hr {
+    background-color: #593737;
+    height: 1px;
+    border: 0;
+}
+
+kbd {
+    background: #3d2b2b !important;
+    border: 1px solid #000 !important;
+}
+
+.winner { border-left: 5px solid #005414 !important; }
+.loser { border-left: 5px solid #7d2b2b !important; }
+
+.pagination a.selected { background: #391b1b !important; }
+.pagination a:hover { background: #3d2b2b !important; }
