@@ -192,6 +192,12 @@ button.button:hover {
 .alert a {
     color: #9bff90 !important;
 }
+a:link {
+color: #80cfef !important;
+}
+a:visited {
+color: #efd180 !important;
+}
 
 /* BIGGEST HEADER ("___"'s DEN) */
 
