@@ -7,7 +7,7 @@ Please do NOT remove this credit, unless your coding becomes unrecognizable from
 
 /* FONT (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Homemade+Apple&family=Pixelify+Sans:wght@400..700&family=Playwrite+AU+NSW:wght@100..400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Homemade+Apple&family=Pixelify+Sans:wght@400..700&family=Playwrite+AU+NSW:wght@100..400&display=swap'); =/
 
 /* BACKGROUND */
 
@@ -172,9 +172,9 @@ button.button:hover {
 .alert-success {
 	background: linear-gradient(#2e2536, #846a9b);
 	border: solid 1px #2b2232;
-	color: #d6d0e1;
+	color: #FFB703;
 	border-radius: 10px !important;
-        box-shadow: 0px 0px 10px #FFB703 !important;
+        box-shadow: 0px 0px 10px #2b2232 !important;
         margin-top: 10px;
 }
 
@@ -355,7 +355,7 @@ td.bottom a {
 
 .inner-table .left {
 	background: linear-gradient(#0f4b30, #24ad70) !important;
-        color: #d6d0e1;
+        color: ##ffffff;
 	border-radius: 0px
 }
 /* LION NAME COLOR */
