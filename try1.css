@@ -52,7 +52,7 @@ text-shadow: 1px 2px 2px #2b2232;
     color: #d6d0e1 !important;
 }
 ul.toplinks a { 
-color: #ffd500 !important;
+color: #d6d0e1 !important;
 }
 ul.toplinks a:hover { 
 color: #ffffff !important; }
@@ -452,6 +452,9 @@ a:link,
 a:visited {
 	color: #dd9541 !important;
 text-shadow: 1px 2px 2px #2b2232 !important;
+}
+.alert-info a {
+    color: #90e0ff !important;
 }
 
 /* LINK HOVER COLOR */
