@@ -166,6 +166,11 @@ button.button:hover {
 
 /* ALERTS (ie. "Your lionesses have returned from hunting!") */
 
+a:link,
+a:visited {
+  color: #ddb057 !important;
+  font-weight: normal;
+
 .alert,
 .alert-warning,
 .alert-danger,
@@ -192,10 +197,7 @@ button.button:hover {
 .alert a {
     color: #9bff90 !important;
 }
-a:link,
-a:visited {
-  color: #ddb057 !important;
-  font-weight: normal;
+
 }
 
 /* BIGGEST HEADER ("___"'s DEN) */
