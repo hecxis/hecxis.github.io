@@ -166,15 +166,6 @@ button.button:hover {
 
 /* ALERTS (ie. "Your lionesses have returned from hunting!") */
 
-a:link,
-a:visited {
-  color: #ddb057 !important;
-  font-weight: normal;
-.alert a {
-    color: #329244 !important;
-}
-}
-	
 .alert,
 .alert-warning,
 .alert-danger,
@@ -185,18 +176,6 @@ a:visited {
 	border-radius: 10px !important;
         box-shadow: 0px 0px 10px #2b2232 !important;
         margin-top: 10px;
-}
-.alert-info a {
-    color: #90e0ff !important;
-}
-.alert-danger a {
-    color: #ff9090 !important;
-}
-.alert-success a {
-    color: #9bff90 !important;
-}
-.alert-warning a {
-    color: #9bff90 !important;
 }
 
 /* BIGGEST HEADER ("___"'s DEN) */
@@ -471,7 +450,7 @@ div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.containe
 
 a:link,
 a:visited {
-	color: #d6d0e1 !important;
+	color: #dd9541 !important;
 text-shadow: 1px 2px 2px #2b2232 !important;
 }
 
