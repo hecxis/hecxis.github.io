@@ -170,7 +170,11 @@ a:link,
 a:visited {
   color: #ddb057 !important;
   font-weight: normal;
-
+.alert a {
+    color: #9bff90 !important;
+}
+}
+	
 .alert,
 .alert-warning,
 .alert-danger,
@@ -193,11 +197,6 @@ a:visited {
 }
 .alert-warning a {
     color: #9bff90 !important;
-}
-.alert a {
-    color: #9bff90 !important;
-}
-
 }
 
 /* BIGGEST HEADER ("___"'s DEN) */
