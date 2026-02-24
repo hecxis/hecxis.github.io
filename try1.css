@@ -192,12 +192,10 @@ button.button:hover {
 .alert a {
     color: #9bff90 !important;
 }
-a:link {
-color: #80cfef !important;
-}
+a:link,
 a:visited {
-color: #efd180 !important;
-}
+  color: #ddb057 !important;
+  font-weight: normal;
 
 /* BIGGEST HEADER ("___"'s DEN) */
 
