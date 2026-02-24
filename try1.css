@@ -172,9 +172,9 @@ button.button:hover {
 .alert-success {
 	background: linear-gradient(#2e2536, #846a9b);
 	border: solid 1px #2b2232;
-	color: #807c89;
+	color: #d6d0e1;
 	border-radius: 10px !important;
-        box-shadow: 0px 0px 10px #2b2232 !important;
+        box-shadow: 0px 0px 10px #FFB703 !important;
         margin-top: 10px;
 }
 
