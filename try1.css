@@ -453,8 +453,16 @@ a:visited {
 	color: #dd9541 !important;
 text-shadow: 1px 2px 2px #2b2232 !important;
 }
-.alert-info a {
-    color: #90e0ff !important;
+.alert a:link,
+.alert a:visited,
+.alert-warning a:link,
+.alert-warning a:visited,
+.alert-danger a:link,
+.alert-danger a:visited,
+.alert-success a:link,
+.alert-success a:visited {
+	color: #ffd500 !important;  /* change to your chosen color */
+	text-shadow: 1px 2px 2px #2b2232 !important;
 }
 
 /* LINK HOVER COLOR */
