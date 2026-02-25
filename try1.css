@@ -153,7 +153,7 @@ button.button {
         background: linear-gradient(#2e2536, #846a9b);
         border: 2px solid #d6d0e1 !important;
 	border-radius: 10px;
-        color: #c4bcd4 !important; 
+        color: #d6d0e1 !important; 
 }
 
 button.button:hover {
