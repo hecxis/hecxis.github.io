@@ -480,6 +480,7 @@ a:link,
 a:visited {
 	color: #fce0d3 !important;
 	font-weight: 600;
+	font-style: italic;
     transition: 0.5s;
 }
 
