@@ -478,19 +478,10 @@ div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.containe
 
 a:link,
 a:visited {
-	color: #fce0d3 !important;
-	/* font-weight: 600 !important;
-	text-shadow: 0px 0px 3px #92625E !important; */
-	text-decoration: none;
-	background-image: linear-gradient(to right, 
-		transparent 15%, 
-		#fce0d3 40%, 
-		#fce0d3 60%, 
-		transparent 85%);
-	background-repeat: no-repeat;
-	background-size: 100% 1px;
-	background-position: 0 100%;
-    transition: 0.5s;
+	color: #ffd8c5 !important;
+	font-weight: 600 !important;
+	text-shadow: 0px 0px 3px #92625E !important;
+	transition: 0.5s;
 }
 
 
