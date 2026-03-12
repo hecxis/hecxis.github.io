@@ -482,7 +482,13 @@ a:visited {
 	/* font-weight: 600 !important;
 	text-shadow: 0px 0px 3px #92625E !important; */
 	text-decoration: none;
-	background-image: linear-gradient(to right, #fce0d3 0%, #fce0d3 25%, transparent 75%);
+	background-image: linear-gradient(to right, 
+		transparent 0%, 
+		transparent 25%, 
+		#fce0d3 25%, 
+		#fce0d3 75%, 
+		transparent 75%, 
+		transparent 100%);
 	background-repeat: no-repeat;
 	background-size: 100% 1px;
 	background-position: 0 100%;
