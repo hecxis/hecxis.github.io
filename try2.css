@@ -483,10 +483,10 @@ a:visited {
 	text-shadow: 0px 0px 3px #92625E !important; */
 	text-decoration: none;
 	background-image: linear-gradient(to right, 
-		transparent 25%, 
-		#fce0d3 45%, 
-		#fce0d3 55%, 
-		transparent 75%);
+		transparent 15%, 
+		#fce0d3 40%, 
+		#fce0d3 60%, 
+		transparent 85%);
 	background-repeat: no-repeat;
 	background-size: 100% 1px;
 	background-position: 0 100%;
