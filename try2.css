@@ -479,6 +479,9 @@ div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.containe
 a:link,
 a:visited {
 	color: #fce0d3 !important;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
     transition: 0.5s;
 }
 
