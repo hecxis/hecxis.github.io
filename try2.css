@@ -1,0 +1,849 @@
+/*
+Free to use CSS template by Katie (#106445).
+This code may be altered, edited, or re-uploaded. 
+This template may be used to create paid codes (pre-mades and commissions).
+Please do NOT remove this credit, unless your coding becomes unrecognizable from this one! 
+*/
+
+
+/* FONT (From Google Fonts) */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+
+/* BACKGROUND */
+
+
+body {
+	background: url('https://images.unsplash.com/photo-1633278372448-500612a9cceb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center fixed;
+	background-size: 100%;
+	font-family: 'Nunito';
+	color: #EAB6A8
+}
+
+
+/* MAIN PANEL */
+
+
+/* RIGHT SIDE */
+.container.main {
+	background: linear-gradient(rgba(20,25,28,0.85), rgba(75,61,61,0.9) 10%);
+	border: none;
+	box-shadow: none;
+	border-radius: 3px
+}
+
+
+/* LEFT SIDE */
+.col-md-9 {
+	background: none;
+        border-right: none
+}
+
+
+/* TOPBAR ("Welcome back, ___") */
+
+
+.topbar {
+	background: #14191C;
+	border: none;
+	border-top: none;
+	color: #EAB6A8;
+	border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-left: solid 2px #EAB6A8;
+    border-right: solid 2px #EAB6A8;
+    border-bottom: solid 2px #EAB6A8;
+}
+
+
+/* NAVBAR (Den/Crossroads/Etc.) */
+
+
+.navbar {
+	background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/sunsetpattern.png") repeat center center, linear-gradient(to right, #14191C, #4c3331);
+	border-bottom: solid 2px #C6887D;
+	color: #000000;
+	border-radius: 3px;
+}
+
+
+/* NAVBAR BUTTON TEXT COLOR */
+
+
+.navbar li a {
+	color: #EAB6A8 !important;
+        transition: 0.3s;
+}
+
+
+/* NAVBAR BUTTON HOVER */
+
+
+.navbar li a:hover {
+	background: transparent !important;
+	border-bottom: none;
+	color: #ffd8c5 !important;
+	border-radius: 0px;
+    text-shadow: 0px 0px 10px #C6887D;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/* BREADCRUMB (Home / Den) */
+
+
+.breadcrumb {
+	background: #252429 !important;
+        border: solid 2px #614748;
+	border-radius: 3px;
+}
+
+
+/* BREADCRUMB TEXT */
+
+
+.breadcrumb .active {
+	color: #EAB6A8
+}
+
+
+/* CSS CREDIT */
+
+
+.breadcrumb::after {
+        content: "Template by Katie (#106445) / Edited by Felid (#114852)";
+        color: #EAB6A8;
+        position: absolute;
+        right: 13%; /* (This may need adjusting) */
+        z-index: 100
+    }
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%
+        }
+    }
+
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%
+        }
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%
+        }
+    }
+
+
+/* BOOKMARK BUTTON */
+
+
+input.floatright, input.floatright:hover {
+	background: linear-gradient(#92625E, #C6887D) !important;
+        border: solid 1px #14191C !important;
+	border-radius: 3px !important;
+	color: #000000 !important;    
+}
+
+
+/* SWITCH ACCOUNT BUTTON */
+
+
+button.button, button.button:hover {
+	background: linear-gradient(#92625E, #C6887D) !important;
+        border: solid 1px #14191C !important;
+	border-radius: 3px;
+        text-shadow: none !important;
+	color: #000000 !important
+}
+
+
+/* ALERTS (ie. "Your lionesses have returned from hunting!") */
+
+
+.alert,
+.alert-warning,
+.alert-danger {
+	background: #14191C !important;
+	border: solid 2px #614748;
+	color: #EAB6A8;
+	border-radius: 3px !important;
+}
+
+
+/* BIGGEST HEADER ("___"'s DEN) */
+
+
+h1 {
+	background: linear-gradient(#92625E, #FDC8AE, #FCFDFF);
+	background-clip: text;
+	color: transparent;
+	font-size: 60px;
+	text-align: center;
+    text-transform: uppercase;
+        font-family: 'Nunito'
+}
+
+h1::after, h1::before {
+    content: " ✦ "
+}
+
+
+/* MEDIUM HEADER */
+
+
+h2 {
+	color: #EAB6A8;
+	font-size: 24px;
+	text-align: center
+}
+
+
+/* SMALL HEADER */
+
+
+h3 {
+	color: #EAB6A8 !important;
+	font-size: 14px !important
+}
+
+
+/* RIGHT SIDE PANEL HEADER */
+
+
+.sidebar h3 {
+	color: #FDC8AE !important;
+    text-transform: uppercase;
+        font-size: 23px !important;
+        font-family: 'Nunito';
+    transition: 0.5s;
+}
+
+.sidebar h3:hover {
+    text-shadow: 0px 0px 5px #C6887D;
+}
+
+
+/* RIGHT SIDE PANELS */
+.panel {
+	background: #4c3331 !important;
+	box-shadow: inset 0px 70px 100px #14191C !important;
+	border: solid 2px #614748 !important;
+	color: #EAB6A8 !important;
+	border-radius: 3px
+}
+
+
+/* ENERGY BAR BACKGROUND */
+.progress {
+	background: linear-gradient(to right, #815d58 60%, #3d2926);
+	color: #000000 !important;
+	border-radius: 3px !important;
+    box-shadow: 1px 1px 5px #14191C;
+}
+
+
+/* ENERGY BAR COLOR */
+.progress-bar {
+	background: linear-gradient(to right, #92625E, #FDC8AE, #ffd8c5);
+	color: #000000 !important;
+	border-radius: 3px !important
+}
+
+
+/* ENERGY BAR TEXT */
+.progress div {
+	color: #14191C !important;
+}
+
+
+/* CHAT */
+
+
+.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
+	background: #14191C !important;
+        color: #EAB6A8 !important;
+	border: none !important
+}
+
+
+.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
+	background: #252122 !important;
+        color: #EAB6A8 !important;
+	border: none !important
+}
+
+
+.s-chat-message__pinned /* Pinned Message */ {
+	background: #14191C !important;
+        color: #ffd8c5 !important;
+	border: none !important
+}
+
+
+.s-chat-message_timestamp /* Timestamps */ {
+	color: #C6887D !important;
+}
+
+
+div#chatMessageContainer {
+    border: 2px #815d58 solid;
+
+}
+
+
+button#label_currentChannel /* Channel Button ie. Main, Sales */ {
+	background: #14191C !important;
+        color: #ffd8c5 !important;
+	border: none !important
+}
+
+
+/* LION INFO TABLE (Level, Stats, Territory Count, Etc.) */
+
+
+
+
+/* PANEL BACKGROUND COLOR */
+
+
+.table {
+	background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/sunsetpattern.png") repeat center center, linear-gradient(#14191C, #92625E);
+	border: solid 2px #92625E !important;
+	border-collapse: separate;
+	border-radius: 3px
+}
+
+
+
+
+/* HEADERS COLOR (King Name + Title, "There are _ lions with mutations in _'s pride.") */
+
+
+.top,
+.bottom,
+th {
+	background: #14191C !important;
+	color: #EAB6A8 !important;
+	border-radius: 0px
+}
+
+
+td.bottom a {
+        text-decoration: none !important
+}
+
+
+/* Color behind "Level, Stats, Branch, Territory" etc. */
+
+
+.inner-table .left {
+	background: #14191C !important;
+        color: #EAB6A8;
+	border-bottom-left-radius: 3px !important;
+    border-top-left-radius: 3px !important;
+}
+
+
+
+
+/* Color behind the number of all of the things above */
+
+
+.inner-table .right {
+	background: rgba(20,25,28,0.74);
+	border-bottom-right-radius: 3px !important;
+    border-top-right-radius: 3px !important
+}
+
+
+td.right {
+	border-radius: 0px !important
+}
+
+
+/* IGNORE */
+.right_odd {
+	background: none !important
+}
+
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", "View Pride Overview", and cave/mound names */
+
+
+.cave-grid,
+.mound-grid {
+	background: #14191C;
+	border: solid 2px #92625E !important;
+	border-radius: 3px !important
+}
+
+
+/* FEED ALL, PLAY ALL */
+
+
+.feature {
+	background: #14191C !important;
+	color: #EAB6A8 !important;
+	border: solid 2px #614748 !important;
+	border-radius: 3px !important;
+}
+
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" Panels */
+
+
+.feature,
+div.left {
+	background: #14191C;
+	border: solid 2px #614748 !important;
+	border-radius: 3px !important;
+}
+
+
+/* Block of color behind "Territory Description, Player Name, Avatar URL" etc. */
+
+
+.table .left {
+	background: #14191C;
+        border-radius: 0px
+}
+
+
+/* Color behind the content of the elements listed above */
+
+
+input,
+select,
+textarea {
+	background: rgba(20,25,28,0.74) !important;
+	border: none !important;
+	border-radius: 3px !important;
+	color: #EAB6A8 !important;
+	box-shadow: none !important;
+	text-shadow: none !important
+}
+
+
+/* ACCOUNT OPTIONS PANELS  (Friend Requests Toggles, etc.) */
+
+
+.item-header {
+	background: #14191C !important;
+	color: #EAB6A8  !important;
+	border-radius: 3px !important;
+}
+
+
+.item {
+	background: rgba(20,25,28,0.74) !important;
+	border: none !important;
+	border-radius: 3px !important
+}
+
+
+/* ACCOUNT OPTIONS ON/OFF TOGGLE SWITCH */
+
+
+div.slider.round /* Background */ {
+	background: #4B3D3D !important
+}
+
+
+div.slider.round::before /* Circle Part */ {
+	background: #92625E !important
+}
+
+
+/* Copyright, Terms of Service, CoC, etc. */
+
+
+div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
+        color: #14191C !important;
+        text-shadow: none !important
+}
+
+
+/* LINK COLOR */
+
+
+a:link,
+a:visited {
+	color: #93a099 !important;
+    transition: 0.5s;
+}
+
+
+/* LINK HOVER COLOR */
+
+
+a:hover {
+	color: #FCFDFF !important
+}
+
+
+
+
+/* BOX CONTAINER */
+
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex
+}
+
+
+.boxcontainer hr {
+    margin: 0px;
+    border-top: solid 2px #815d58;
+    width: 70%;
+}
+
+
+.boxcontainer h1 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+
+.boxcontainer h2 {
+    margin: 0px;
+}
+
+
+.boxcontainer h3 {
+    font-size: 20px !important;
+    margin: 0px;
+}
+
+
+/* BOXES */
+
+.smallbox {
+	float: left;
+	background: linear-gradient(#14191C, #4c3331 130%);
+	color: #EAB6A8;
+	padding: 10px;
+	border: solid 2px #92625E;
+	border-radius: 3px;
+	margin: 10px;
+	height: 150px;
+	width: 28.4%;
+	overflow: auto;
+    scrollbar-color: #92625E #14191C;
+}
+
+
+.mediumbox {
+	float: left;
+	background: linear-gradient(#14191C, #4c3331 130%);
+	color: #EAB6A8;
+	padding: 10px;
+	border: solid 2px #92625E;
+	border-radius: 3px;
+	margin: 10px;
+	height: 150px;
+	width: 43.8%;
+	overflow: auto;
+    scrollbar-color: #92625E #14191C;
+}
+
+.largebox {
+	float: left;
+	background: linear-gradient(#14191C, #4c3331 130%);
+	color: #EAB6A8;
+	padding: 10px;
+	border: solid 2px #92625E;
+	border-radius: 3px;
+	margin: 10px;
+	height: 215px;
+	width: 90%;
+	overflow: auto;
+    scrollbar-color: #92625E #14191C;
+}
+
+.boxtopper {
+    transform: scale(0.7);
+    float: right;
+    position: absolute;
+    z-index: 999;
+    right: 30px;
+    pointer-events: none;
+}
+
+
+/* SCROLL BAR */
+
+
+/* WIDTH */
+
+
+::-webkit-scrollbar {
+	width: 10px
+}
+
+
+/* BACKGROUND */
+
+
+::-webkit-scrollbar-track {
+	background: #14191C
+}
+
+
+
+
+/* "THUMB" */
+
+
+::-webkit-scrollbar-thumb {
+	background: #4B3D3D;
+	border-radius: 3px
+}
+
+
+
+
+/* LION AND USER AVATAR OPACITY */
+
+
+div#lion_image {
+	opacity: 0.9
+}
+
+div#lion_image::after {
+    content: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/sunsetlionborder.png);
+    position: absolute;
+    transform: scale(0.6);
+    left: -10px;
+    top: -5px;
+}
+
+
+table#player img {
+	opacity: 0.9;
+    
+}
+
+
+
+
+/* CIRCULAR LION AND USER AVATAR */
+
+
+div#lion_image {
+	border-radius: 3px !important;
+	overflow: hidden;
+	margin-top: 15px; /* May need adjusting */
+	margin-left: 12px; /* May need adjusting */
+    box-shadow: 0px 0px 5px #EAB6A8;
+    transition: 0.5s;
+}
+
+div#lion_image:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 8px #ffd8c5;
+}
+
+
+table#player img {
+	border-radius: 3px !important;
+	overflow: hidden;
+    
+}
+
+
+
+
+/* LIODEN LOGO REPLACER */
+
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/sunsetlogo.png');
+    transition: 0.5s;
+}
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
+    transform: scale(1.05);
+}
+
+/* CAVE / MOUND IMAGES */
+
+
+
+.cave-grid {
+    opacity: 0.8;
+    transition: 0.2s;
+    padding: 5px;
+    transition: 0.5s;
+
+}
+
+
+
+.cave-grid:hover,
+.mound-grid:hover {
+    transition: 0.5s;
+    opacity: 1;
+    box-shadow: 0px 0px 7px #92625E;
+}
+
+.mound-grid {
+    transition: 0.5s;
+}
+
+
+
+img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/sunsetunsorted.png') !important;
+}
+
+
+img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/sunsetnesting.png') !important
+}
+
+
+img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/sunsetoverview.png') !important
+}
+
+
+img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/sunsetcaves.png') !important
+}
+
+.mound-grid img /* Mound(s) */ {
+	background: url("lollmaoeven");
+	width: 0;
+	height: 0;
+	padding-top: 0px;
+	padding-right: 130px
+}
+
+
+/* MAKES BOXES/DESCRIPTION SHOW ON MOBILE */
+
+
+@media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	display: block !important;
+}
+
+
+@media only screen and (min-width: 1200px) {
+		div.quote {
+			width: 790px;
+		}
+	}
+
+    
+/* REMOVE WHITE LINE */
+#player hr {
+display:none;
+}
+
+
+/* REMOVE 'Member ID' */
+div.floatright > small {
+    display:none;
+}
+
+
+
+/* FONT SIZE EDIT ON PLAYER BOX */
+div.center.h3 {
+    font-size:20px;
+}
+ 
+td.top, small {
+    font-size:14px;
+}
+
+/*Comment Box*/
+#commentBox {
+background: linear-gradient(#14191C, #4c3331 150%);
+border: 2px solid #815d58 !important;
+border-radius: 3px;
+}
+
+div.comment {background: #14191C !important;
+border-bottom: 1px solid #614748;
+color: #EAB6A8;
+}
+
+div#makeComment {background: #14191C !important;
+border: 2px #815d58 solid;
+    border-radius: 3px;
+}
+
+input#comment {background: linear-gradient(to right, #614748, #14191C) !important;
+color: #EAB6A8 !important;
+    border-radius: 3px;
+}
+
+small.text-muted {color: #C6887D;}
+small.text-muted a {color: #EAB6A8;}
+
+input[type="button"].bad {background: #a0514a !important;}
+
+/*Scrollbars*/
+#commentBox::-webkit-scrollbar {
+width: 7px;
+height: 7px;
+}
+
+#commentBox::-webkit-scrollbar-track {
+background: black;}
+
+#commentBox::-webkit-scrollbar-thumb {
+background: #2c1a5d;
+border: 1px solid #78699f;}
+
+/* MAKE DYNASTY/ACHIEVEMENT/ETC. ONE ROW */
+div.col-md-3.col-sm-6.col-xs-6.mb-2.dynastylist {
+width: 20%;}
+
+
+/* mobile background - fixed image stretching code by tawnycollar #251887 */
+@media screen and (max-width: 768px){
+body {
+background: url("https://images.unsplash.com/photo-1633278372448-500612a9cceb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+html:not(.nolayout) body:after {
+content:"";
+position:fixed; 
+top:0;
+height:160vh;
+left:0;
+right:0;
+z-index:-1; 
+background: url("https://images.unsplash.com/photo-1633278372448-500612a9cceb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+}
+
