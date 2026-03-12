@@ -479,8 +479,8 @@ div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.containe
 a:link,
 a:visited {
 	color: #fce0d3 !important;
-	font-weight: 600;
-	font-style: italic;
+	font-weight: 600 !important;
+	font-style: italic !important;
     transition: 0.5s;
 }
 
